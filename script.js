@@ -2,15 +2,15 @@ let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
 
-// function generateTarget:
+// arrow function generateTarget:
 const generateTarget = () => {
   return Math.floor(Math.random()*10);
 }
 
 // console.log(generateTarget())
 
-// function compareGuesses
-function compareGuesses(humanGuess, computerGuess, generateTarget) {
+// arrow function compareGuesses
+const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
   if (humanGuess.Math.abs() >= computerGuess.Math.abs()) {
     return true;
   } else {
