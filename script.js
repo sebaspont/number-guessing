@@ -11,9 +11,16 @@ const generateTarget = () => {
 
 // arrow function compareGuesses
 const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
-  if (humanGuess.Math.abs() >= computerGuess.Math.abs()) {
-    return true;
-  } else {
-    return false;
-  }
+  const humanDiff = Math.abs (secretTarget - humanGuess);
+  const computerDiff = Math.abs (secretTarget - computerGuess);
+
+  // option with if else statement
+  // if (humanDiff >= computerDiff) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+  // concise option
+  return humanDiff >= computerDiff;
 }
