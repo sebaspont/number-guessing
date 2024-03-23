@@ -7,8 +7,6 @@ const generateTarget = () => {
   return Math.floor(Math.random()*10);
 }
 
-// console.log(generateTarget())
-
 // arrow function compareGuesses
 const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
   const humanDiff = Math.abs (secretTarget - humanGuess);
@@ -41,3 +39,8 @@ const updateScore = (winner) => {
 const advanceRound = () => {
   currentRoundNumber++;
 }
+
+// // TESTS
+// console.log(generateTarget());
+// console.log(updateScore());
+// console.log(advanceRound());
