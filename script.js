@@ -7,11 +7,13 @@ function generateTarget() {
   return Math.floor(Math.random()*10);
 }
 
-// function compareGuesses
-function compareGuesses(humanGuess, computerGuess, targetNumber) {
-  if (humanGuess.Math.abs() >= computerGuess.Math.abs()) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// console.log(generateTarget())
+
+// // function compareGuesses
+// function compareGuesses(humanGuess, computerGuess, targetNumber) {
+//   if (humanGuess.Math.abs() >= computerGuess.Math.abs()) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
