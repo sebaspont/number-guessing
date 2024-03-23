@@ -25,16 +25,7 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
   return humanDiff >= computerDiff;
 }
 
-// Create an updateScore() function. This function:
-
-// Has a single parameter. This parameter will be a string value representing the winner.
-// Increases the score variable (humanScore or computerScore) by 1 depending on the winner passed in to updateScore.
-// The string passed in will be either 'human' or 'computer'.
-// Does not need to return any value.
-// The purpose of this function is to be used to correctly increase the winner’s score after each round.
-
-// updateScore function
-// since it takes only one parameter, the parenthesis around winner can be ommited!
+// The parentheses around the parameter can be when there's only one parameter.
 const updateScore = (winner) => {
   if (winner === 'human') {
     // += 1 can also be written as ++;
@@ -42,4 +33,11 @@ const updateScore = (winner) => {
   } else {
     computerScore += 1;
   }
+}
+
+// Can also be written as implicit return without curly braces:
+// const advanceRound = () => currentRoundNumber++;
+
+const advanceRound = () => {
+  currentRoundNumber++;
 }
